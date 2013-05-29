@@ -13,3 +13,9 @@ B = matrix ( RR, 4, 4, [ 0.6, 0.2, 0.2, 0,            # travel
 initial = [0, 1, 0, 0]
 
 model = hmm.DiscreteHiddenMarkovModel (A, B, initial, emission_symbols)
+
+set_random_seed(0); model.sample(3)
+set_random_seed(1); model.sample(2)
+set_random_seed(1);
+a,b = model.generate_sequence(4)
+a, list(b)
