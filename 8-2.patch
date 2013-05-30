@@ -1,0 +1,19 @@
+# HG changeset patch
+# User Lan Zou <zoul@uw.com>
+# Date 1369948372 14400
+# Node ID 9c3pr87f015ca0298e54f00fb91536224c12f790
+# Parent  a83614f546caab583360107f5f996d2bc5e63358
+Added one more sentences before gcd.
+
+ddiff --git a/sage/rings/integer.pyx b/sage/rings/integer.pyx
+old mode 100050
+new mode 100676
+--- a/sage/stats/basic_stats.py
++++ b/sage/stats/basic_stats.py
+@@ -401,6 +401,7 @@
+         sage: gcd(1030000,9)
+         1
+     """
++    print "actually..."
+     print "I am stilling thinking..."
+     print "well, the result is..."
